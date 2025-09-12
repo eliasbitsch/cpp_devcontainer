@@ -26,32 +26,29 @@ sudo apt install build-essential git
 - Search for: `Dev Containers`
 - Install the **Dev Containers** extension by Microsoft
 
-## 6. (Optional) Enable the `code` command in your PATH
-- Open VS Code, press `Ctrl+Shift+P`, type `shell command`, and select **Install 'code' command in PATH**.
-
-## 7. Get This Project
+## 6. Get This Project
 ```bash
 git clone https://github.com/eliasbitsch/cpp_devcontainer.git
 cd cpp_devcontainer/workspace/project1
 ```
 
-## 8. Open in VS Code from Terminal
+## 7. Open in VS Code from Terminal
 ```bash
 code .
 ```
 
-## 9. Open in Dev Container
+## 8. Open in Dev Container
 - In VS Code, press `Ctrl+Shift+P`
 - Type: `Reopen in Container`
 - Select: **Dev Containers: Reopen in Container**
 - Wait for the container to build and open
 
-## 10. Naviagte to project1 folder
+## 9. Naviagte to project1 folder
 ```bash
 cd project1
 ```
 
-## 11. Build and run the code
+## 10. Build and run the code
 ```bash
 make run
 ```
