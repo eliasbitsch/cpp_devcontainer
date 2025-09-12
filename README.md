@@ -31,7 +31,7 @@ sudo apt install build-essential git
 
 ## 7. Get This Project
 ```bash
-git clone https://github.com/yourusername/cpp_devcontainer.git
+git clone https://github.com/eliasbitsch/cpp_devcontainer.git
 cd cpp_devcontainer/workspace/project1
 ```
 
