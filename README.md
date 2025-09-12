@@ -46,10 +46,14 @@ code .
 - Select: **Dev Containers: Reopen in Container**
 - Wait for the container to build and open
 
-## 10. Build and Run
+## 10. Naviagte to project1 folder
 ```bash
-make
-./project1
+cd project1
+```
+
+## 11. Build and run the code
+```bash
+make run
 ```
 
 That's it! Use `code .` and the Dev Containers extension for the best workflow.
