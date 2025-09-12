@@ -1,0 +1,61 @@
+{
+	"name": "C++ Development Container",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"runArgs": [
+		"--name=devcontainer",
+		"--hostname=devcontainer"
+	],
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				// Essential C++ Extensions only
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
+				// Git (basic)
+				"eamodio.gitlens",
+				// Simple theme
+				"pkief.material-icon-theme"
+			],
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"C_Cpp.default.compilerPath": "/usr/bin/gcc",
+				"C_Cpp.default.cStandard": "c17",
+				"C_Cpp.default.cppStandard": "c++20",
+				"C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+				"cmake.configureOnOpen": true,
+				"cmake.generator": "Unix Makefiles",
+				"files.trimTrailingWhitespace": true,
+				"files.insertFinalNewline": true,
+				"editor.formatOnSave": true,
+				"C_Cpp.formatting": "clangFormat",
+				"C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 100 }",
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"git.enableSmartCommit": true,
+				"git.confirmSync": false,
+				"workbench.colorTheme": "Default Dark Modern"
+			}
+		}
+	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest",
+			"ppa": true
+		}
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "echo 'C++ Development Container is ready!'",
+	// Configure tool-specific properties.
+	"remoteUser": "vscode",
+	// Mount the workspace
+	"workspaceFolder": "/workspace",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+}
