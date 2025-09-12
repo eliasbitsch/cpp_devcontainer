@@ -55,5 +55,12 @@ cd project1
 ```bash
 make run
 ```
-
-That's it! Use `code .` and the Dev Containers extension for the best workflow.
+## Then you should get the following output
+```bash
+./project1
+┌─────────────────────────────────────────┐
+│  🎓 Welcome to FHTW Development! 🎓    │
+│  🤖 Running in devcontainer 🤖         │
+│  💻 C++ Programming Environment 💻     │
+└─────────────────────────────────────────┘
+```
