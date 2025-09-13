@@ -10,6 +10,8 @@ Restart if needed. Open Ubuntu from the Start menu and set up your username.
 ## 2. Install Tools in Ubuntu
 ```bash
 sudo apt update
+```
+```bash
 sudo apt install build-essential git
 ```
 
@@ -29,6 +31,9 @@ sudo apt install build-essential git
 ## 6. Get This Project
 ```bash
 git clone https://github.com/eliasbitsch/cpp_devcontainer.git
+```
+
+```bash
 cd cpp_devcontainer/workspace/project1
 ```
 
