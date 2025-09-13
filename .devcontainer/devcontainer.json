@@ -14,13 +14,11 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				// Essential C++ Extensions only
 				"ms-vscode.cpptools",
 				"ms-vscode.cmake-tools",
-				// Git (basic)
 				"eamodio.gitlens",
-				// Simple theme
-				"pkief.material-icon-theme"
+				"pkief.material-icon-theme",
+				"ms-vscode.cpptools-extension-pack"
 			],
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
