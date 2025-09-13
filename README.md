@@ -34,7 +34,7 @@ git clone https://github.com/eliasbitsch/cpp_devcontainer.git
 ```
 
 ```bash
-cd cpp_devcontainer/workspace/project1
+cd cpp_devcontainer
 ```
 
 ## 7. Open in VS Code from Terminal
