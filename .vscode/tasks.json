@@ -2,95 +2,27 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build Debug (Current Project)",
-            "type": "shell",
-            "command": "cmake",
+            "type": "cppbuild",
+            "label": "C/C++: Build all .cpp files",
+            "command": "/usr/bin/g++",
             "args": [
-                "-B", "build",
-                "-DCMAKE_BUILD_TYPE=Debug"
+                "-fdiagnostics-color=always",
+                "-g",
+                "-I",
+                "${workspaceFolder}/**/include",
+                "${workspaceFolder}/**/src/*.cpp",
+                "-o",
+                "${fileDirname}/main.out"
             ],
-            "group": "build",
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "shared"
-            }
-        },
-        {
-            "label": "Build Release (Current Project)",
-            "type": "shell",
-            "command": "cmake",
-            "args": [
-                "-B", "build",
-                "-DCMAKE_BUILD_TYPE=Release"
-            ],
-            "group": "build",
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "shared"
-            }
-        },
-        {
-            "label": "Compile (Current Project)",
-            "type": "shell",
-            "command": "cmake",
-            "args": [
-                "--build", "build"
+            "problemMatcher": [
+                "$gcc"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "dependsOn": "Build Debug (Current Project)",
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "shared"
-            }
-        },
-        {
-            "label": "Run Application",
-            "type": "shell",
-            "command": "./build/hello_world",
-            "group": "test",
-            "dependsOn": "Compile",
-            "options": {
-                "cwd": "${workspaceFolder}/workspace"
-            },
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "shared"
-            }
-        },
-        {
-            "label": "Clean",
-            "type": "shell",
-            "command": "rm",
-            "args": ["-rf", "build"],
-            "group": "build",
-            "options": {
-                "cwd": "${workspaceFolder}/workspace"
-            },
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "shared"
             }
         }
     ]

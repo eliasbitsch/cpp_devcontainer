@@ -6,5 +6,6 @@
 int main() {
     // Print the FHTW devcontainer welcome message
     hello_fhtw();
+
     return 0;
 }

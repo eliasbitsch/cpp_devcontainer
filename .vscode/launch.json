@@ -2,24 +2,29 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug Hello World",
+            "name": "Launch Main",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/workspace/build/hello_world",
+            "program": "${workspaceFolder}/**/main.out",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/workspace",
+            "cwd": "${workspaceFolder}/**",
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "MIMode": "gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Compile",
+            "preLaunchTask": "Build with Make",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]

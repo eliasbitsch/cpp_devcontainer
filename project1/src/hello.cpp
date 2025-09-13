@@ -1,7 +1,6 @@
 #include "hello.h"
 
 #include <iostream>
-#include <string>
 
 // Print a formatted welcome banner for FHTW devcontainer
 void hello_fhtw() {

@@ -28,7 +28,6 @@ Makefile
 *.out
 *.app
 main
-test_calculator
 
 # Debug files
 *.pdb
