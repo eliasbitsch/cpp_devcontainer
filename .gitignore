@@ -33,10 +33,6 @@ main
 *.pdb
 *.ilk
 
-# IDE files
-.vscode/c_cpp_properties.json
-.vscode/.browse.c_cpp.db*
-
 # OS generated files
 .DS_Store
 .DS_Store?
