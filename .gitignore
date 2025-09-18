@@ -20,12 +20,6 @@ cmake_install.cmake
 *.a
 *.lib
 
-# Executables
-*.exe
-*.out
-*.app
-main
-
 # Debug files
 *.pdb
 *.ilk

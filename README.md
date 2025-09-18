@@ -66,3 +66,10 @@ make run
 │  💻 C++ Programming Environment 💻     │
 └─────────────────────────────────────────┘
 ```
+
+
+## ⚠️ Note on Debugging in VS Code
+![Click "Remember my choice" and "Debug Anyway"](debug-anyway.png)
+If you see the error:
+👉 Just click **"Remember my choice"** and then select **"Debug Anyway"**.
+This will make VS Code use the correct build task defined in `.vscode/tasks.json`.
